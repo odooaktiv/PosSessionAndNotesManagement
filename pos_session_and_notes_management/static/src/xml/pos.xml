@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<template>
+
+    <t t-extend="PosTicket">
+        <t t-jquery="t[t-esc='orderline.get_product().display_name']" t-operation="after">
+            <t t-if="orderline.get_note()">
+                <div class="pos-disc-font">
+                    Note:
+                    <t t-esc="orderline.get_note()"/>
+                </div>
+            </t>
+        </t>
+    </t>
+
+    <t t-extend="XmlReceipt">
+        <t t-jquery="t[t-foreach='receipt.orderlines']" t-operation="append">
+            <t t-if="line.note">
+                <li class="info orderline-note">
+                    <i class='fa fa-tag'/><t t-esc="line.note" />
+                </li>
+            </t>
+        </t>
+    </t>
+</template>
