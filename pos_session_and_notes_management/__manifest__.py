@@ -11,6 +11,7 @@
     'author': "AktivSoftware",
     'website': "www.aktivsoftware.com",
     "category": "Point of Sale",
+    'license': "AGPL-3",
     'depends': ['point_of_sale', 'pos_restaurant', 'pos_discount',
                 'pos_reprint', 'pos_sale'],
     'data': [
