@@ -8,7 +8,7 @@
     Manage POS Session according users and added Notes in KOT receipt and bill receipt.
         """,
     'version': '11.0.1.0.0',
-    'author': "AktivSoftware",
+    'author': "Aktiv Software",
     'website': "www.aktivsoftware.com",
     "category": "Point of Sale",
     'license': "AGPL-3",
